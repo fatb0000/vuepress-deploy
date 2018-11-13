@@ -1,10 +1,19 @@
 module.exports = {
-    title: "VuePress Deploy",
+    title: "3Tech Kindergarten",
     locales: {
         '/': {
-            lang: 'de-DE',
-            title: 'VuePress Deploy',
+            selectText: 'Languages',
+            label: 'English',
+            lang: 'en',
+            title: '3Tech Kindergarten',
             description: 'Vuepress with Netlify Deploy Button'
+        } ,
+        '/zh/': {
+            selectText: 'Languages',
+            label: 'English',
+            lang: 'zh-HK',
+            title: '3Tech 幼兒園',
+            description: '幼兒園網站'
         }
     },
     head: [
@@ -22,7 +31,7 @@ module.exports = {
     serviceWorker: true,
     themeConfig: {
         docsDir: 'docs',
-        repo: 'capriosa/vuepress-deploy',
+        repo: 'fatb0000/vuepress-deploy',
 
         nav: [{
                 text: 'Start',
@@ -30,7 +39,7 @@ module.exports = {
             },
             {
                 text: 'Admin',
-                link: '/admin',
+                link: '/admin/#/',
             },
             {
                 text: 'NetlifyCMS Config Help',

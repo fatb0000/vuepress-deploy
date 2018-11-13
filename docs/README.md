@@ -5,7 +5,7 @@ title: Markdown examples
 
 Edit on 30.04.2018 with NetlifyCMS
 
-![](./my_launcher.png)
+![image](/my_launcher.png)
 
 # h1 HmHm 8-)
 
