@@ -5,6 +5,8 @@ title: Markdown examples
 
 Edit on 30.04.2018 with NetlifyCMS
 
+![](/.vuepress/dist/my_launcher.png)
+
 # h1 HmHm 8-)
 
 ## h2 Heading
