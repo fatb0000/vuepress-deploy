@@ -22,13 +22,18 @@ collections:
     files:
       - name: "menu1"
         label: "menu1"
-        create: true
+
         file: ".vuepress/menu.json"
         format: "json"
+        extention: "json"
+        allow_add: true
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Link", name: "link", widget: "string"}
-
+          - label: "Listing"
+            name: "Listing"
+            widget: "list"
+            fields:
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "title", name: "title", widget: "string"}
       - name: "menux"
         label: "menux"
         file: "README2.md"

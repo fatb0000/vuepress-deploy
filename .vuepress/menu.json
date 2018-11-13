@@ -1,12 +1,16 @@
 {
-  "Listing": [
+  "listing": [{
+    "text": "Start",
+    "link": "/docs/"
+  },
     {
-      "link": "asdfdsdf",
-      "title": "asdfasdf"
+      "text": "Admin",
+      "link": "/admin/"
     },
     {
-      "link": "safsadfsdafasd",
-      "title": "asfasdfasdfasdfaasdf"
+      "text": "NetlifyCMS Config Help",
+      "link": "/docs/netlifycms-configuration.html"
     }
+
   ]
 }

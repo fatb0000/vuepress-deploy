@@ -1,3 +1,7 @@
+const fs = require("fs");
+const contents = fs.readFileSync(".vuepress/menu.json");
+const jsonContent = JSON.parse(contents);
+console.log(jsonContent.listing)
 module.exports = {
     title: "3Tech Kindergarten",
     host: "localhost",
@@ -29,21 +33,21 @@ module.exports = {
     themeConfig: {
         docsDir: 'docs',
         repo: 'fatb0000/vuepress-deploy',
-
-        nav: [{
-                text: 'Start',
-                link: '/docs/',
-            },
-            {
-                text: 'Admin',
-                link: '/admin/',
-            },
-            {
-                text: 'NetlifyCMS Config Help',
-                link: '/docs/netlifycms-configuration.html',
-            }
-
-        ]
+        nav: jsonContent.listing
+        // nav: [{
+        //         text: 'Start',
+        //         link: '/docs/',
+        //     },
+        //     {
+        //         text: 'Admin',
+        //         link: '/admin/',
+        //     },
+        //     {
+        //         text: 'NetlifyCMS Config Help',
+        //         link: '/docs/netlifycms-configuration.html',
+        //     }
+        //
+        // ]
 
     }
 }
