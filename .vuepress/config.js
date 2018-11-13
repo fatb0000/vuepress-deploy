@@ -1,16 +1,13 @@
 module.exports = {
     title: "3Tech Kindergarten",
+    host: "localhost",
     locales: {
         '/': {
-            selectText: 'Languages',
-            label: 'English',
             lang: 'en',
             title: '3Tech Kindergarten',
             description: 'Vuepress with Netlify Deploy Button'
         } ,
         '/zh/': {
-            selectText: 'Languages',
-            label: 'English',
             lang: 'zh-HK',
             title: '3Tech 幼兒園',
             description: '幼兒園網站'
@@ -39,7 +36,7 @@ module.exports = {
             },
             {
                 text: 'Admin',
-                link: '/admin/#/',
+                link: '/admin/',
             },
             {
                 text: 'NetlifyCMS Config Help',

@@ -7,8 +7,8 @@ public_folder: ".vuepress/dist/"
 media_folder: ".vuepress/dist/assets/img"
 
 collections:
-  - name: "doc"
-    label: "Doc"
+  - name: "page"
+    label: "Page"
     folder: "docs"
     create: true
     slug: "{{slug}}"
@@ -16,3 +16,23 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu1"
+        label: "menu1"
+        create: true
+        file: ".vuepress/menu.json"
+        format: "json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Link", name: "link", widget: "string"}
+
+      - name: "menux"
+        label: "menux"
+        file: "README2.md"
+        fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Link", name: "Link", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
