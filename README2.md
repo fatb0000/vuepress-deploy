@@ -1,5 +1,5 @@
 ---
 title: test
-link: home
+link: homexx
 ---
 
